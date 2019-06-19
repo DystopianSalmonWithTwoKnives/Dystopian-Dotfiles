@@ -3,12 +3,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Command prompt
-export PS1="[\A | \u@\h : \w] "
-
-
 # Custom aliases
-alias ls='ls --color=auto'
+alias ls="ls --color=auto"
+
+# Command prompt
+export PS1="[ \e[38;5;247m\[\A \e[37m\[][ \e[38;5;166m\[\u\e[37m\[ @ \e[38;5;190m\[\h\e[37m\[ : \e[38;5;247m\[\w\e[37m\[ ]\e[38;5;124m\$\e[37m "
+
 
 ## Aliases for package management
 alias xu="sudo xbps-install -Suv"
