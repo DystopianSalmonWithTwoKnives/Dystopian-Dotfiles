@@ -17,7 +17,7 @@ alias xr="sudo xbps-remove"
 ## Aliases for editor
 alias n="nvim"
 alias s="surf"
-alias so="surf & disown -h %1"
+alias so="surf & disown -h %1 && exit"
 
 ## Aliases for directories
 alias sc="cd /home/stoz/.local/bin/"
