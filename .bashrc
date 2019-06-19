@@ -23,5 +23,4 @@ alias so="surf & disown -h %1 && exit"
 alias sc="cd /home/stoz/.local/bin/"
 
 source $HOME/.profile
-alias dotfiles='/usr/bin/git --git-dir=/home/stoz/.dotfiles/ --work-tree=/home/stoz'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
