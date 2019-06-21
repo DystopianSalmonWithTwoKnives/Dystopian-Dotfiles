@@ -1,5 +1,5 @@
 xwallpaper --zoom .wallpaper.jpg &
- xmopmap ~/.Xmodmap & 
+xmodmap ~/.Xmodmap & 
 # sxhkd &
 ~/.local/bin/dwmstatusbar.sh &
 exec dwm
