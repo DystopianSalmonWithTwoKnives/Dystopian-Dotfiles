@@ -1,4 +1,4 @@
-xwallpaper --zoom .wallpaper.jpg &
+xwallpaper --zoom .wallpaper &
 xmodmap ~/.Xmodmap & 
 # sxhkd &
 ~/.local/bin/dwmstatusbar.sh &
