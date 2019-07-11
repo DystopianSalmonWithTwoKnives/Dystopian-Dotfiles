@@ -19,9 +19,14 @@ alias xr="sudo xbps-remove"
 alias n="nvim"
 alias s="surf"
 alias so="surf & disown -h %1 && exit"
+alias anki="/opt/anki/runanki & disown -h %1 && exit"
 
 ## Aliases for directories
 alias sc="cd /home/stoz/.local/bin/"
+
+## Aliases for battery
+alias batinfo="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+alias wbatinfo="watch upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 source $HOME/.profile
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
