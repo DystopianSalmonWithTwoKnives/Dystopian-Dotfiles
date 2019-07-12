@@ -12,7 +12,7 @@ battery()
 
 timedate()
 {
-	echo "$(date '+%Y %b %d (%a) %I:%M%p') "
+	echo "$(date '+%c') "
 }
 
 # == Main == #
