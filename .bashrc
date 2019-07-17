@@ -30,3 +30,4 @@ alias wbatinfo="watch upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 source $HOME/.profile
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias fuck="sudo !!"
