@@ -5,6 +5,7 @@
 
 # Custom aliases
 alias ls="ls --color=auto"
+alias grep="grep --color=auto"
 
 # Command prompt
 export PS1="\[\e[37m[\] \e[38;5;247m\[\A \e[37m\]][ \e[38;5;166m\[\u\e[37m\[ @ \e[38;5;190m\[\h\e[37m\[ : \e[38;5;247m\[\w\e[37m\] ]\[\e[38;5;124m\]\$\[\e[37m\] "
