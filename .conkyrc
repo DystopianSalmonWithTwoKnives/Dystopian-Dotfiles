@@ -5,7 +5,8 @@ background = true,
 update_interval = 2,
 total_run_times = 0,
 use_spacer = 'none',
+double_buffer = true,
 };
 conky.text = [[
-$mpd_smart :: ${cpu cpu1}% / ${cpu cpu2}%  ${loadavg 1} ${loadavg 2 3} :: ${acpitemp}c :: $memperc% ($mem) :: ${downspeed wlp3s0}K/s ${upspeed wlp3s0}K/s :: ${time %a %b %d %I:%M%P} :: ${battery_percent BAT0}%
+[CPUs : ${cpu cpu1}% / ${cpu cpu2}%] [Temp : ${acpitemp}c] [Mem : $memperc% ($mem)] [Internet : ${downspeed wlp3s0}K/s ${upspeed wlp3s0}K/s] ${time %a %b %d %I:%M%P} [${battery_percent BAT0}%]
 ]];
