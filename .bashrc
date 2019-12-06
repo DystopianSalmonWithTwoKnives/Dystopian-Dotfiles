@@ -1,5 +1,10 @@
 # .bashrc
 
+#General settings
+export LANG="en_CA.UTF-8"
+export LC_ALL="en_CA.UTF-8"
+export LANGUAGE="en_CA.UTF-8"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 

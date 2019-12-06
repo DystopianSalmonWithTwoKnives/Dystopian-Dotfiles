@@ -22,6 +22,7 @@ set expandtab
 set bg=dark
 filetype plugin on
 set nocompatible
+set encoding=UTF-8
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
