@@ -4,6 +4,7 @@
     # xdotool windowactivate $(xdotool search --class front)
     xdotool type "export PS1=\"\""
     xdotool key Return
+    sleep 0.1
     xdotool type "echo -e \"\n\n\n\n\" && neofetch | lolcat -s 201 && printf '\\33[?25l'"
     xdotool key Return
     xdotool key Shift_L+Alt_L+space
@@ -32,6 +33,7 @@
     xdotool mousemove 630 270
     xdotool mouseup 3
     xdotool mousedown 1
+    sleep 0.05
     xdotool mousemove_relative 50 50
     xdotool mouseup 1
     xdotool keyup Alt_L
