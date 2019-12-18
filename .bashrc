@@ -17,7 +17,7 @@ export white="\[\e[37m\]"
 export grey="\[\e[38;5;247m\]"
 export orange="\[\e[38;5;166m\]"
 export yellow="\[\e[38;5;190m\]"
-export red="\[\e[38;5;124m\["
+export red="\[\e[38;5;124m\]"
 
 # Command prompt
 export PS1="$white[$grey \A $white][$orange \u $white@ $yellow\h$white : $grey\w$white ] $red\$ $white"
