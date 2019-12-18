@@ -12,8 +12,15 @@ export LANGUAGE="en_CA.UTF-8"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
+# Color definition
+export white="\[\e[37m\]"
+export grey="\[\e[38;5;247m\]"
+export orange="\[\e[38;5;166m\]"
+export yellow="\[\e[38;5;190m\]"
+export red="\[\e[38;5;124m\["
+
 # Command prompt
-export PS1="\[\e[37m[\] \e[38;5;247m\[\A \e[37m\]][ \e[38;5;166m\[\u\e[37m\[ @ \e[38;5;190m\[\h\e[37m\[ : \e[38;5;247m\[\w\e[37m\] ]\[\e[38;5;124m\]\$\[\e[37m\] "
+export PS1="$white[$grey \A $white][$orange \u $white@ $yellow\h$white : $grey\w$white ] $red\$ $white"
 
 
 ## Aliases for package management
