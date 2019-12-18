@@ -19,7 +19,7 @@
 
     st -c front1 & 
     # xdotool windowactivate $(xdotool search --class front1)
-    sleep 0.05
+    sleep 0.08
     xdotool type "peaclock"
     xdotool key Return
     xdotool key Shift_L+Alt_L+space
