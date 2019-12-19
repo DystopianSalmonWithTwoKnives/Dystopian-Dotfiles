@@ -2,10 +2,7 @@
 
     st -c front & 
     # xdotool windowactivate $(xdotool search --class front)
-    xdotool type "export PS1=\"\""
-    xdotool key Return
-    sleep 0.1
-    xdotool type "echo -e \"\n\n\n\n\" && neofetch | lolcat -s 201 && printf '\\33[?25l'"
+    xdotool type "export PS1=\"\" && echo -e \"\n\n\n\n\" && neofetch | lolcat -s 201 && printf '\\33[?25l'"
     xdotool key Return
     xdotool key Shift_L+Alt_L+space
     xdotool keydown Alt_L
