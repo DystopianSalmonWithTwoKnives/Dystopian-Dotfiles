@@ -11,7 +11,7 @@
     xdotool mousemove 630 420
     xdotool mouseup 3
     xdotool mousedown 1
-    xdotool mousemove_relative 50 323
+    xdotool mousemove_relative 50 305
     xdotool mouseup 1
     xdotool keyup Alt_L
 
@@ -27,7 +27,7 @@
     xdotool keydown Alt_L
     xdotool mousedown 3
     sleep 0.05
-    xdotool mousemove 630 270
+    xdotool mousemove 630 250
     xdotool mouseup 3
     xdotool mousedown 1
     sleep 0.05
