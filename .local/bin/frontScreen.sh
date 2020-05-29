@@ -1,7 +1,7 @@
 #!/bin/bash
 
-    st -c front & 
-    # xdotool windowactivate $(xdotool search --class front)
+    st &
+    sleep 0.1
     xdotool type "export PS1=\"\" && echo -e \"\n\n\n\n\" && neofetch | lolcat -s 201 && printf '\\33[?25l'"
     xdotool key Return
     xdotool key Shift_L+Alt_L+space
@@ -38,6 +38,8 @@
     st -c front2 & 
     # xdotool windowactivate $(xdotool search --class front2)
     sleep 0.05
+    xdotool type "cat horaire.txt"
+    xdotool key Return
     xdotool key Shift_L+Alt_L+space
     xdotool keydown Alt_L
     xdotool mousedown 3

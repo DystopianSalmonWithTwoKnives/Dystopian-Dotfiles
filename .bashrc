@@ -18,10 +18,10 @@ export grey="\[\e[38;5;247m\]"
 export orange="\[\e[38;5;166m\]"
 export yellow="\[\e[38;5;190m\]"
 export red="\[\e[38;5;124m\]"
+export green="\[\3[38;5;082m\]"
 
 # Command prompt
-export PS1="$white[$grey \A $white][$orange \u $white@ $yellow\h$white : $grey\w$white ] $red\$ $white"
-
+export PS1="$white[ $grey\A$white ] [ $orange\u$white @ $yellow\h$white : $grey\w$white ] $red\$ $white"
 
 ## Aliases for package management
 alias xu="sudo xbps-install -Suv"
@@ -43,4 +43,21 @@ alias wbatinfo="watch upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 source $HOME/.profile
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias fuck="sudo !!"
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/stoz/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/stoz/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/stoz/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/stoz/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
