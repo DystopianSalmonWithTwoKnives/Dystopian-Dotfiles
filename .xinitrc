@@ -1,6 +1,6 @@
 xwallpaper --maximize .wallpaper &
-xmodmap ~/.config/xmodmap/Xmodmap & 
-#(sleep 2 && conky | while read LINE; do xsetroot -name "$LINE"; done) &
+xmodmap ~/.config/xmodmap/.Xmodmap & 
+dwmstatusbar.sh &
 (sleep 1 && frontScreen.sh) &
 #(sleep 3 && st) &
 exec dwm
