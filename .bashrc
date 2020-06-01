@@ -7,6 +7,7 @@ export LANGUAGE="en_CA.UTF-8"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+bind -f ~/.inputrc
 
 # Custom aliases
 alias ls="ls --color=auto"

@@ -65,8 +65,6 @@ promptToKill(){
 type="$(printf "screencast\\nvideo\\naudio\\nkill" | dmenu -i -p "What type of recording do you want ot start ?")"
 
 echo "$type"
-test=[ -f "/tmp/recInfo.csv" ]
-echo $test
 
 case "$type" in
     screencast) ([ -f "/tmp/recInfo.csv" ] && (promptToKill || exit 1)) ; screencast;;
