@@ -1,3 +1,4 @@
+xset r rate 250 50
 xwallpaper --maximize .wallpaper &
 xmodmap ~/.config/xmodmap/.Xmodmap & 
 dwmstatusbar.sh &
@@ -6,4 +7,5 @@ dwmstatusbar.sh &
 exec dwm
 #exec ~/prog/c/window_manager/window_manager
 #exec sowm
+#exec budgie-desktop
 #exec ~/git/catwm/catwm

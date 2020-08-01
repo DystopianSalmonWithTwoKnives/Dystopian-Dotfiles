@@ -7,6 +7,6 @@
 export PATH=$PATH:~/.local/bin/
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="chromium"
 export READER="zathura"
 export TZ="America/Toronto"

@@ -29,16 +29,18 @@ killRecording(){
 }
 
 screencast(){
+    #-s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
     ffmpeg -y \
 	-f x11grab \
 	-framerate 60 \
-	-s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
+    -s "1920x1080" \
 	-i "$DISPLAY" \
-	-f alsa -i default \
+	-f alsa -i hw:1,0 \
 	-r 30 \
  	-c:v h264 -crf 0 -preset ultrafast -c:a aac \
 	"$HOME/media/recordings/screencast-$(date '+%y%m%d-%H%M-%S').mp4" &
     writeInfo $! 🎙+⏺
+
 }
 
 audio() { \

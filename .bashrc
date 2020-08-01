@@ -12,6 +12,10 @@ bind -f ~/.inputrc
 # Custom aliases
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
+alias apip="./anaconda3/bin/pip"
+alias ppod="mpv --no-video"
+alias nbcours="grep -v \"=\" ~/scolaire/parcours_universitaire/lists_cours | sed '/^\\s*$/d' | wc -l"
+alias goctave="octave --traditional --gui"
 
 # Color definition
 export white="\[\e[37m\]"
