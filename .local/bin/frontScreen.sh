@@ -60,4 +60,8 @@
     xdotool mousemove_relative 700 428
     xdotool mouseup 1
     xdotool keyup Alt_L
+    sleep 0.1
+    xdotool type "newsboat"
+    xdotool key Return
+ 
 

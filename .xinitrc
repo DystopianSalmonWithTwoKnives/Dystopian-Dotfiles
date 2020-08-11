@@ -1,10 +1,12 @@
 xset r rate 250 50
-xwallpaper --maximize .wallpaper &
+xwallpaper --zoom .wallpaper &
 xmodmap ~/.config/xmodmap/.Xmodmap & 
-dwmstatusbar.sh &
+#dwmstatusbar.sh &
+dwmblocks &
 (sleep 1 && frontScreen.sh) &
 #(sleep 3 && st) &
 exec dwm
+#exec openbox
 #exec ~/prog/c/window_manager/window_manager
 #exec sowm
 #exec budgie-desktop

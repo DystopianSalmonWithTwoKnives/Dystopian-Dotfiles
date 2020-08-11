@@ -1,0 +1,2 @@
+macro y set browser youtube-dl ; open-in-browser ; set browser $browser
+macro Y set browser youtube-dl ; open-all-unread-in-browser ; set browser $browser
