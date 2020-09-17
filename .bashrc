@@ -26,7 +26,7 @@ export red="\[\e[38;5;124m\]"
 export green="\[\3[38;5;082m\]"
 
 # Command prompt
-export PS1="$white[ $grey\A$white ] [ $orange\u$white @ $yellow\h$white : $grey\w$white ] $red\$ $white"
+export PS1="$white[ $grey\A$white ] [ $orange\u$white @ $yellow\h$white : $grey\w$white ] $red\$$white "
 
 ## Aliases for package management
 alias xu="sudo xbps-install -Suv"
@@ -65,4 +65,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+source ~/.local/share/icons-in-terminal/icons_bash.sh
 
