@@ -11,3 +11,5 @@ export BROWSER="surf"
 export READER="zathura"
 export TZ="America/Toronto"
 export LC_TIME="fr_CA.UTF-8"
+
+export XDG_CONFIG_HOME="/home/stoz/"

@@ -16,6 +16,7 @@ alias apip="./anaconda3/bin/pip"
 alias ppod="mpv --no-video"
 alias nbcours="grep -v \"=\" ~/scolaire/parcours_universitaire/lists_cours | sed '/^\\s*$/d' | wc -l"
 alias goctave="octave --traditional --gui"
+alias musicget="cd ~/Musique && youtube-dl -x -f bestaudio --embed-thumbnail --audio-format mp3"
 
 # Color definition
 export white="\[\e[37m\]"
